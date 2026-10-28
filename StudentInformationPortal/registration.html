@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            margin: 20px 40px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h2 { color: #003366; }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px 12px;
+        }
+        input[type="text"], input[type="email"], input[type="number"],
+        select, textarea {
+            width: 250px;
+            padding: 6px;
+            font-size: 14px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #003366;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><b>Full Name:</b></td>
+                <td><input type="text" name="fullname" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><b>Email:</b></td>
+                <td><input type="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><b>Roll Number:</b></td>
+                <td><input type="number" name="rollno" placeholder="Enter roll number" required></td>
+            </tr>
+            <tr>
+                <td><b>Gender:</b></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+            <tr>
+                <td><b>Branch:</b></td>
+                <td>
+                    <select name="branch">
+                        <option value="">-- Select Branch --</option>
+                        <option value="cse">CSE</option>
+                        <option value="ece">ECE</option>
+                        <option value="me">ME</option>
+                        <option value="ce">CE</option>
+                        <option value="ee">EE</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Semester:</b></td>
+                <td>
+                    <select name="semester">
+                        <option value="">-- Select Semester --</option>
+                        <option>1st</option>
+                        <option>2nd</option>
+                        <option>3rd</option>
+                        <option>4th</option>
+                        <option>5th</option>
+                        <option>6th</option>
+                        <option>7th</option>
+                        <option>8th</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Hobbies:</b></td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="sports"> Sports
+                    <input type="checkbox" name="hobbies" value="music"> Music
+                    <input type="checkbox" name="hobbies" value="coding"> Coding
+                    <input type="checkbox" name="hobbies" value="reading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td><b>Address:</b></td>
+                <td><textarea name="address" rows="3" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Portal</title>
+</head>
+<!-- Divide browser into two rows: header (20%) and content area (80%) -->
+<frameset rows="20%,80%" border="2">
+    <!-- Top row: college name header -->
+    <frame src="header.html" name="headerFrame" noresize scrolling="no">
+
+    <!-- Bottom row: split into two columns - navigation (25%) and content (75%) -->
+    <frameset cols="25%,75%">
+        <frame src="menu.html" name="menuFrame"><br>
+        <frame src="home.html" name="contentFrame"><br>
+    </frameset>
+</frameset>
+
+<noframes>
+    <body>
+        <p>Your browser does not support frames. Please use a frames-compatible browser.</p><br>
+    </body><br>
+</noframes>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+</head>
+<body>
+<h1>Online Course Registration</h1>
+<p>Demo form only. Use sample details. Nothing is submitted or stored.</p>
+<form action="#" method="post" target="_self" onsubmit="event.preventDefault(); document.getElementById('status').textContent = 'Demo complete. No data was submitted or stored.';" onreset="document.getElementById('status').textContent = '';">
+<p><label for="name">Student Name</label><br><input type="text" id="name" name="name" placeholder="Enter a sample name" required></p>
+<p><label for="email">Email Address</label><br><input type="email" id="email" name="email" placeholder="student@example.com" required></p>
+<p><label for="mobile">Mobile Number</label><br><input type="tel" id="mobile" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required></p>
+<p><label for="age">Age</label><br><input type="number" id="age" name="age" min="1" max="120"></p>
+<p><label for="password">Password</label><br><input type="password" id="password" name="password" required autocomplete="new-password"></p>
+<fieldset><legend>Gender</legend>
+<input type="radio" id="gender-0" name="gender" value="Male" required> <label for="gender-0">Male</label>
+<input type="radio" id="gender-1" name="gender" value="Female" required> <label for="gender-1">Female</label>
+<input type="radio" id="gender-2" name="gender" value="Other" required> <label for="gender-2">Other</label>
+</fieldset>
+<fieldset><legend>Skills</legend>
+<input type="checkbox" id="skills-0" name="skills" value="HTML"> <label for="skills-0">HTML</label>
+<input type="checkbox" id="skills-1" name="skills" value="CSS"> <label for="skills-1">CSS</label>
+<input type="checkbox" id="skills-2" name="skills" value="JavaScript"> <label for="skills-2">JavaScript</label>
+<input type="checkbox" id="skills-3" name="skills" value="Python"> <label for="skills-3">Python</label>
+</fieldset>
+<p><label for="course">Course</label><br><select id="course" name="course" required><option value="">Choose an option</option><option>Web Development</option><option>Python Programming</option><option>Data Analytics</option><option>Digital Marketing</option></select></p>
+<input type="hidden" name="form-name" value="Online Course Registration">
+<p><label for="dob">Date of Birth</label><br><input type="date" id="dob" name="dob" ></p>
+<p><label for="class-time">Preferred Class Time</label><br><input type="time" id="class-time" name="class-time" ></p>
+<p><label for="address">Address / Additional Information</label><br><textarea id="address" name="address" rows="4" cols="40" placeholder="Enter a sample address or additional information"></textarea></p>
+<p><label for="upload">Document or Photograph</label><br><input type="file" id="upload" name="upload" accept="image/*,.pdf"></p>
+<input type="submit" value="Submit"> <input type="reset" value="Reset">
+</form>
+<p id="status" role="status"></p>
+</body>
+</html>

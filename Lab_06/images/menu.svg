@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+<rect width="800" height="500" fill="wheat"/>
+<g stroke="#6b3c20" stroke-width="3">
+<circle cx="135" cy="135" r="85" fill="#d79740"/><circle cx="135" cy="135" r="73" fill="#ffd66e"/>
+<g fill="#c94835"><circle cx="110" cy="100" r="12"/><circle cx="160" cy="105" r="12"/><circle cx="95" cy="145" r="12"/><circle cx="145" cy="155" r="12"/><circle cx="170" cy="145" r="12"/></g>
+<circle cx="400" cy="135" r="85" fill="#f1c57b"/>
+<path d="M328 120 Q400 30 472 120Z" fill="#d99a44"/><rect x="328" y="127" width="144" height="22" rx="10" fill="#693e28"/><path d="M328 153 L350 163 375 151 400 163 425 151 450 163 472 153" fill="none" stroke="green" stroke-width="10"/>
+<rect x="560" y="50" width="210" height="160" fill="#fff4ce"/>
+<g fill="#ffd255"><rect x="600" y="68" width="15" height="100"/><rect x="622" y="62" width="15" height="100"/><rect x="644" y="72" width="15" height="100"/><rect x="666" y="62" width="15" height="100"/><rect x="688" y="70" width="15" height="100"/></g><path d="M593 126 H712 L702 193 H603Z" fill="#c84332"/>
+<rect x="30" y="285" width="210" height="165" fill="#fffaf0"/><path d="M60 355 H210 M60 375 H210 M60 395 H170" stroke="#bfa587"/>
+<polygon points="310,445 375,300 440,445" fill="#efbc67"/><path d="M320 426 L375 318 430 426Z" fill="#79a44b"/><path d="M330 415 L375 337 420 415Z" fill="#f6e4b7"/>
+<polygon points="520,300 750,300 700,445 560,445" fill="#75402e"/><path d="M520 300 H750 L700 340 H560Z" fill="#efb9b1"/><path d="M548 390 H718" stroke="#fff0d4" stroke-width="14"/>
+</g>
+<g font-family="Arial, sans-serif" font-size="21" text-anchor="middle" fill="#34261d">
+<text x="135" y="247">Pizza</text><text x="400" y="247">Burger</text><text x="665" y="247">French Fries</text>
+<text x="135" y="329">MENU CARD</text><text x="135" y="479">Menu Card</text><text x="375" y="479">Sandwich</text><text x="635" y="479">Cake Slice</text>
+</g></svg>

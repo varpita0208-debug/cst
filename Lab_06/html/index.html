@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Restaurant Menu</title>
+</head>
+<body>
+    <h1>Interactive Restaurant Menu</h1>
+    <p>Click on a food item to read about it. Click the background for other items.</p>
+    <div style="overflow-x: auto;">
+        <img src="../images/menu.svg" width="800" height="500" usemap="#food-menu" alt="Menu illustration with pizza, burger, french fries, menu card, sandwich and cake slice">
+    </div>
+    <map name="food-menu">
+    <area shape="circle" coords="135,135,85" href="pizza.html" alt="Pizza">
+    <area shape="circle" coords="400,135,85" href="burger.html" alt="Burger">
+    <area shape="rect" coords="560,50,770,210" href="fries.html" alt="French Fries">
+    <area shape="rect" coords="30,285,240,450" href="menu-card.html" alt="Menu Card">
+    <area shape="poly" coords="310,445,375,300,440,445" href="sandwich.html" alt="Sandwich">
+    <area shape="poly" coords="520,300,750,300,700,445,560,445" href="cake.html" alt="Cake Slice">
+    <area shape="default" href="other.html" alt="Other Items">
+    </map>
+    <p>Text links: <a href="pizza.html">Pizza</a> | <a href="burger.html">Burger</a> | <a href="fries.html">French Fries</a> | <a href="menu-card.html">Menu Card</a> | <a href="sandwich.html">Sandwich</a> | <a href="cake.html">Cake Slice</a> | <a href="other.html">Other Items</a></p>
+</body>
+</html>

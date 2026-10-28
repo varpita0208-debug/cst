@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readers’ Haven – Book Registration &amp; Order Form</title>
+</head>
+<body>
+<h1>Readers’ Haven – Book Registration &amp; Order Form</h1>
+<p>Demo form only. Use sample details. Nothing is submitted or stored.</p>
+<form action="#" method="post" target="_self" onsubmit="event.preventDefault(); document.getElementById('status').textContent = 'Demo complete. No data was submitted or stored.';" onreset="document.getElementById('status').textContent = '';">
+<p><label for="name">Customer Name</label><br><input type="text" id="name" name="name" placeholder="Enter a sample name" required></p>
+<p><label for="email">Email Address</label><br><input type="email" id="email" name="email" placeholder="student@example.com" required></p>
+<p><label for="mobile">Mobile Number</label><br><input type="tel" id="mobile" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" required></p>
+<p><label for="age">Age</label><br><input type="number" id="age" name="age" min="1" max="120"></p>
+<p><label for="password">Password</label><br><input type="password" id="password" name="password" required autocomplete="new-password"></p>
+<p><label for="delivery-date">Delivery Date</label><br><input type="date" id="delivery-date" name="delivery-date" ></p>
+<p><label for="delivery-time">Preferred Delivery Time</label><br><input type="time" id="delivery-time" name="delivery-time" ></p>
+<p><label for="category">Favorite Book Category</label><br><select id="category" name="category" required><option value="">Choose an option</option><option>Fiction</option><option>Science</option><option>History</option><option>Children’s Books</option></select></p>
+<p><label for="book-title">Book Title</label><br><input type="text" id="book-title" name="book-title" required></p>
+<p><label for="quantity">Quantity</label><br><input type="number" id="quantity" name="quantity" min="1" value="1" required></p>
+<fieldset><legend>Preferred Payment Method</legend>
+<input type="radio" id="payment-0" name="payment" value="Cash on Delivery" required> <label for="payment-0">Cash on Delivery</label>
+<input type="radio" id="payment-1" name="payment" value="Online Payment" required> <label for="payment-1">Online Payment</label>
+</fieldset>
+<fieldset><legend>Additional Services</legend>
+<input type="checkbox" id="services-0" name="services" value="Gift Wrapping"> <label for="services-0">Gift Wrapping</label>
+<input type="checkbox" id="services-1" name="services" value="Bookmark"> <label for="services-1">Bookmark</label>
+<input type="checkbox" id="services-2" name="services" value="Express Delivery"> <label for="services-2">Express Delivery</label>
+<input type="checkbox" id="services-3" name="services" value="Greeting Card"> <label for="services-3">Greeting Card</label>
+</fieldset>
+<input type="hidden" name="form-name" value="Readers Haven Book Order">
+<p><label for="reference">Reference Image or Document</label><br><input type="file" id="reference" name="reference" accept="image/*,.pdf"></p>
+<p><label for="address">Delivery Address and Special Instructions</label><br><textarea id="address" name="address" rows="4" cols="40" placeholder="Enter a sample delivery address and instructions" required></textarea></p>
+<button type="submit">Submit</button> <button type="reset">Reset</button>
+</form>
+<p id="status" role="status"></p>
+</body>
+</html>

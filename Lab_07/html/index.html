@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Explorer</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: aliceblue; text-align: center; }
+        main { max-width: 850px; margin: 30px auto; padding: 20px; background: white; }
+        .map { overflow-x: auto; }
+        img { display: block; width: 800px; height: 500px; margin: auto; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>World Map Explorer</h1>
+        <p>Click a highlighted country on this simplified world map. The drawing is not to scale.</p>
+        <p>Click a highlighted country to learn more about it.</p>
+        <div class="map">
+            <img src="../images/world-map.svg"
+                 usemap="#world-map" width="800" height="500"
+                 alt="World map with Canada, Brazil, United Kingdom, India, Japan and Australia highlighted">
+        </div>
+        <map name="world-map">
+            <area shape="rect" coords="70,85,240,145" href="https://en.wikipedia.org/wiki/Canada" target="_blank" rel="noopener" alt="Learn about Canada">
+            <area shape="circle" coords="415,160,28" href="https://en.wikipedia.org/wiki/United_Kingdom" target="_blank" rel="noopener" alt="Learn about the United Kingdom">
+            <area shape="poly" coords="250,270,320,285,310,395,270,440,240,335" href="https://en.wikipedia.org/wiki/Brazil" target="_blank" rel="noopener" alt="Learn about Brazil">
+            <area shape="poly" coords="555,245,620,255,605,340,575,365,545,290" href="https://en.wikipedia.org/wiki/India" target="_blank" rel="noopener" alt="Learn about India">
+            <area shape="circle" coords="735,220,28" href="https://en.wikipedia.org/wiki/Japan" target="_blank" rel="noopener" alt="Learn about Japan">
+            <area shape="rect" coords="650,360,770,440" href="https://en.wikipedia.org/wiki/Australia" target="_blank" rel="noopener" alt="Learn about Australia">
+            <area shape="default" href="https://en.wikipedia.org/wiki/World" target="_blank" rel="noopener" alt="Learn about the world">
+        </map>
+    </main>
+</body>
+</html>
